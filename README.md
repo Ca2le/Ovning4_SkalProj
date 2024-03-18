@@ -1,29 +1,29 @@
-1. ) Hur fungerar stacken och heapen? Förklara gärna med exempel eller skiss på dess\n
-grundläggande funktion?\n
+1. ) Hur fungerar stacken och heapen? Förklara gärna med exempel eller skiss på dess
+grundläggande funktion?
 
-SVAR:\n
-Stacken används främst för att hantera funktionsanrop och lokala variabler av primitiva datatyper.\n
-int a = 10; // Lagras på stacken.\n
+SVAR:
+Stacken används främst för att hantera funktionsanrop och lokala variabler av primitiva datatyper.
+int a = 10; // Lagras på stacken.
 
-Heapen har ett mer flexibelt system och hanterar referenstyper så som klasser, objekt, arrayer m.m.\n
-Värdet lagras i heapstacken som en instans och kan äga eller dela samma minnesaddress med andra referenser. \n
-Person alice = new Person("Alice", 25); \n
+Heapen har ett mer flexibelt system och hanterar referenstyper så som klasser, objekt, arrayer m.m.
+Värdet lagras i heapstacken som en instans och kan äga eller dela samma minnesaddress med andra referenser. 
+Person alice = new Person("Alice", 25); 
 
 2.) Vad är Value Types respektive Reference Types och vad skiljer dem åt?
 
-SVAR: \n
-Valuetypes / Primitivetypes är datatyper som ej delar sitt värde med andra. Med andra ord ej går att mutera. \n
-int a = 25; \n
-int b = a; \n
-a = 0 \n
+SVAR: 
+Valuetypes / Primitivetypes är datatyper som ej delar sitt värde med andra. Med andra ord ej går att mutera. 
+int a = 25; 
+int b = a; 
+a = 0 
 
-// a == 0 // true \n
-// b == 25 // true \n
+// a == 0 // true 
+// b == 25 // true 
 
-Referenstypen adresserar till ett värde i heapstacken. Detta värde går att dela med andra referenstyper, men om värdet ändras ändras det för alla. \n
-Person alice = new Person("Alice", 25);  \n
-Person bob = alice;  \n
-bob.Name = "Bob"; \n
+Referenstypen adresserar till ett värde i heapstacken. Detta värde går att dela med andra referenstyper, men om värdet ändras ändras det för alla. 
+Person alice = new Person("Alice", 25);  
+Person bob = alice;  
+bob.Name = "Bob"; 
  
 alice.Name == "Bob" // true
 bob.Name  == "Bob" // true
